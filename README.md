@@ -1,3 +1,10 @@
+#  LAMBDA_QUEUE  
+
+Author: [Felipe F. Rocha](https://github.com/felipefrocha)
+## Diagram 
+---
+<p align=center><img src="./.diagram/diagram.png" alt="drawing" width="50%"/></p>
+
 ## Requirements
 
 No requirements.

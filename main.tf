@@ -1,4 +1,3 @@
-
 resource "aws_sns_topic" "topic" {
   name         = var.s3_event_name
   display_name = "Cemed Request Notification"

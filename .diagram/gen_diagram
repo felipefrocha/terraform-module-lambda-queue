@@ -1,0 +1,15 @@
+#!/usr/bin/python3
+
+from diagrams import Cluster,Diagram
+from diagrams.aws.integration import SQS
+from diagrams.aws.compute import Lambda
+from diagrams.aws.network import VPC
+
+
+with Diagram("Lambda Queue triggered",filename=".diagram/diagram", show=False):
+    with Cluster("AWS Account"):
+        queue = SQS("Event Queue")
+        with Cluster("VPC"):
+            vpc = VPC("Defined VPC")
+            handlers = [Lambda("Lambda Process")]
+    queue >> handlers
